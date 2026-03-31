@@ -24,7 +24,7 @@ const Navbar = () => {
         <li><a>FAQ</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-[#8c27f2ce] text-xl md:text-4xl">DigitalTools</a>
+    <a className=" text-[#8c27f2ce] text-xl md:text-4xl"><span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent font-semibold">DigitalTools</span></a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -40,7 +40,7 @@ const Navbar = () => {
   <div className="navbar-end flex gap-4">
     <FaShoppingCart />
     <a className='btn rounded-full'>Login</a>
-    <a className="btn rounded-full text-white bg-[#782bf3ea]">Get Started</a>
+    <a className=" bg-gradient-to-r from-indigo-500 to-purple-600 text-white p-3  rounded-full text-[10px] md:text-[16px] shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">Get Started</a>
   </div>
 </div>
     );

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Ratinsection = () => {
     return (
-        <div className='bg-[#8b39f6d2] text-white flex-none md:flex md:justify-between sm:px-39 py-15 px-[200px]'>
+        <div className='bg-gradient-to-r from-indigo-500 to-purple-600 text-white flex-none md:flex md:justify-between sm:px-39 py-15 px-[200px]'>
             <div>
                 <h1 className='text-4xl font-bold'>50K+</h1> 
                 <p className='mt-1'>Active Users</p>
