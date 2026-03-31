@@ -8,7 +8,10 @@
     "tag": "Best Seller",
     "tagType": "best-seller",
     "image": "https://i.ibb.co.com/kg024Nkw/AI-Writing-Pro.jpg",
-    "features": ["Unlimited AI generations", "50+ writing templates", "Grammar checker"]
+    "features": "Unlimited AI generations",
+     "feature":"50+ writing templates",
+     "featur" : "Grammar checker"
+    
   },
   {
     "id": 2,
@@ -19,7 +22,10 @@
     "tag": "Popular",
     "tagType": "popular",
     "image": "https://i.ibb.co.com/8nyx2zCB/Design-Templates-Pack.jpg",
-    "features": ["2000+ templates", "Monthly updates", "Commercial license"]
+    "features": "2000+ templates",
+     "feature":"Monthly updates",
+     "featur" : "Commercial license"
+  
   },
   {
     "id": 3,
@@ -30,7 +36,10 @@
     "tag": "New",
     "tagType": "new",
     "image": "https://images.unsplash.com/photo-1492724441997-5dc865305da7",
-    "features": ["10M+ assets", "Commercial use", "No attribution"]
+    "features": "10M+ assets",
+     "feature":"Commercial use",
+     "featur" : "No attribution"
+   
   },
   {
     "id": 4,
@@ -41,7 +50,10 @@
     "tag": "Popular",
     "tagType": "popular",
     "image": "https://i.ibb.co.com/Nn1pGWck/Automation-Toolkit.jpg",
-    "features": ["50+ automations", "API access", "Custom workflows"]
+    "features": "50+ automations",
+     "feature":"API access",
+     "featur" : "Custom workflows"
+    
   },
   {
     "id": 5,
@@ -52,7 +64,10 @@
     "tag": "New",
     "tagType": "new",
     "image": "https://i.ibb.co.com/fdj2wZ6f/Resume-Builder-Pro.png",
-    "features": ["100+ templates", "ATS optimization", "Export to PDF"]
+    "features": "100+ templates",
+     "feature":"ATS optimization",
+     "featur" : "Export to PDF"
+   
   },
   {
     "id": 6,
@@ -63,7 +78,10 @@
     "tag": "Best Seller",
     "tagType": "best-seller",
     "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
-    "features": ["5000+ assets", "Scheduler included", "Analytics dashboard"]
+    "features": "5000+ assets",
+     "feature":"Scheduler included",
+     "featur" : "Analytics dashboard"
+   
   },
   {
     "id": 7,
@@ -74,7 +92,10 @@
     "tag": "Popular",
     "tagType": "popular",
     "image": "https://images.unsplash.com/photo-1557838923-2985c318be48",
-    "features": ["Email automation", "Templates library", "Open rate tracking"]
+    "features": "Email automation",
+     "feature":"Templates library",
+     "featur" : "Open rate tracking"
+   
   },
   {
     "id": 8,
@@ -85,7 +106,10 @@
     "tag": "New",
     "tagType": "new",
     "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
-    "features": ["Keyword analysis", "Site audit", "Competitor tracking"]
+    "features": "Keyword analysis",
+     "feature":"Site audit",
+     "featur" : "Competitor tracking"
+    
   },
   {
     "id": 9,
@@ -96,7 +120,10 @@
     "tag": "Best Seller",
     "tagType": "best-seller",
     "image": "https://images.unsplash.com/photo-1492724441997-5dc865305da7",
-    "features": ["4K editing", "Effects & transitions", "Export presets"]
+    "features": "4K editing",
+     "feature":"Effects & transitions",
+     "featur" : "Export presets"
+   
   },
   {
     "id": 10,
@@ -107,6 +134,9 @@
     "tag": "Popular",
     "tagType": "popular",
     "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
-    "features": ["Proposal templates", "Invoice generator", "Client tracker"]
+    "features": "Proposal templates",
+     "feature":"Invoice generator",
+     "featur" : "Client tracker"
+     
   }
 ]

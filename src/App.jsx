@@ -1,10 +1,14 @@
 
+
 import './App.css'
 import DigitalTools from './component/DigitalTools/DigitalTools'
 import Herosection from './component/HeroSection/Herosection'
 import Navbar from './component/NavBar/Navbar'
 import Premiummodel from './component/PremiumModel/Premiummodel'
 import Ratinsection from './component/RatingSection/Ratinsection'
+import Modelcart from './component/ModelCart/Modelcart'
+import Carts from './component/Carts'
+import { useState } from 'react'
 
 const premiumData = async () => {
  const res = await fetch("/data.json")
@@ -13,7 +17,8 @@ return res.json()
 
 const premiumPromise = premiumData()
 function App() {
- 
+   const [activeCart,setActiveCart] = useState()
+  
 
   return (
     <>
@@ -22,6 +27,8 @@ function App() {
     <Ratinsection/>
     <DigitalTools/>
     <Premiummodel premiumPromise={premiumPromise}/>
+    <Carts/>
+    
     </>
   )
 }
