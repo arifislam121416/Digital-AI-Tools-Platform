@@ -1,36 +1,47 @@
-
-
+import { Suspense, useState } from 'react'
 import './App.css'
 import DigitalTools from './component/DigitalTools/DigitalTools'
 import Herosection from './component/HeroSection/Herosection'
+import Models from './component/Models'
 import Navbar from './component/NavBar/Navbar'
-import Premiummodel from './component/PremiumModel/Premiummodel'
 import Ratinsection from './component/RatingSection/Ratinsection'
-import Modelcart from './component/ModelCart/Modelcart'
-import Carts from './component/Carts'
-import { useState } from 'react'
+import Cart from './component/Cart'
+import TabsModel from './component/TabsModel'
 
-const premiumData = async () => {
- const res = await fetch("/data.json")
-return res.json()
+const getModels = async ()=>{
+  const res = await fetch("/data.json")
+  return res.json()
 }
 
-const premiumPromise = premiumData()
+const modelPromise = getModels()
+
 function App() {
-   const [activeCart,setActiveCart] = useState()
-  
+ 
+const [activeTabe,setActiveTabe] = useState("Product")
+
+const [carts,setCarts] = useState([])
+
+
 
   return (
     <>
-    <Navbar/>
-    <Herosection/>
-    <Ratinsection/>
-    <DigitalTools/>
-    <Premiummodel premiumPromise={premiumPromise}/>
-    <Carts/>
-    
+      <Navbar/>
+
+      <Herosection/>
+
+      <Ratinsection/>
+
+      <DigitalTools/>
+
+      <TabsModel activeTabe={activeTabe} setActiveTabe={setActiveTabe} />
+
+    {activeTabe === "Product" && <Suspense fallback={<p>Loading....</p>}>
+       <Models modelPromise={modelPromise} carts={carts} setCarts={setCarts} />
+     </Suspense>}
+
+     {activeTabe === "Cart" && <Cart carts={carts} setCarts={setCarts} />}
+
     </>
   )
 }
-
 export default App

@@ -1,6 +1,9 @@
 import React from 'react';
-import Groupimg from '/public/Group 5.png'
-import Playimg from '/public/Play.png'
+import Playimg from '../../assets/Play.png'
+import Packageimg from '../../assets/Package.png'
+import BannerImg from '../../assets/banner.png'
+
+
 
 
 const Herosection = () => {
@@ -9,12 +12,12 @@ const Herosection = () => {
   <div className="hero-content sm:text-center flex-col md:lg:flex-row-reverse lg:flex-row-reverse">
   <div className=''>
       <img
-      src="https://i.ibb.co.com/YB945drb/banner.png"
+      src={BannerImg}
       className="max-w-sm rounded-lg shadow-2xl"
     />
   </div>
     <div className='w-[50%] sp-6'>
-        <p className="badge py-4 mb-2 badge-soft badge-secondary"><img src={Groupimg} alt="" /> New: AI-Powered Tools Available</p>
+        <p className="badge py-4 mb-2 badge-soft badge-secondary"><img src={Packageimg} alt="" /> New: AI-Powered Tools Available</p>
       <h1 className="text-2xl space-y-2 md:text-5xl font-bold">
         Supercharge Your<br/><span>Digital Work flow</span>
         </h1>
