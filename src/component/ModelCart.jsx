@@ -45,7 +45,7 @@ if(isFound){
 
                     <p className='flex gap-2 items-center'><IoMdCheckmarkCircleOutline className='text-green-500' /> {model.featur}</p>
                    </div>
-                   <button onClick={handleBuyNow} className='btn w-full text-xl bg-linear-to-r from-pink-600 to-blue-500 text-white rounded-full'>
+                   <button onClick={handleBuyNow} className='btn w-full text-xl bg-linear-to-r  from-purple-900 to-blue-600 text-white rounded-full'>
                     {isModel ? "Added" : "Buy Now"}
                     </button>
                   </div>

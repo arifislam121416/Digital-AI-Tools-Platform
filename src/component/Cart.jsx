@@ -19,7 +19,7 @@ const Cart = ({carts,setCarts}) => {
    }
 
     return (
-        <div className='bg-gray-300 rounded-3xl p-10 mt-6 space-y-2'>
+        <div className='bg-gray-200 rounded-3xl p-10 mt-6 space-y-2'>
             <h1 className="text-4xl font-bold mb-4">Your Cart</h1>
 
 {
