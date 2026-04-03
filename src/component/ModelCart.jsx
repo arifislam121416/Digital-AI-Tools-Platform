@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { toast } from "react-toastify";
 
 
 const ModelCart = ({model,carts,setCarts}) => {
@@ -8,7 +9,16 @@ const ModelCart = ({model,carts,setCarts}) => {
 
  const handleBuyNow = ()=>{
    setIsModel(true)
+
+const isFound = carts.find(item => item.id === model.id)
+
+if(isFound){
+  toast.error("Allredy Cart Added")
+  return
+}
+
    setCarts([...carts, model])
+   toast.success("Success Added to Cart")
  }
     
     return (

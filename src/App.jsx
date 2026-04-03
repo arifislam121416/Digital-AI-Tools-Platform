@@ -33,9 +33,9 @@ const [carts,setCarts] = useState([])
 
       <DigitalTools/>
 
-      <TabsModel activeTabe={activeTabe} setActiveTabe={setActiveTabe} />
+      <TabsModel activeTabe={activeTabe} setActiveTabe={setActiveTabe} carts={carts} />
 
-    {activeTabe === "Product" && <Suspense fallback={<p>Loading....</p>}>
+    {activeTabe === "Product" &&  <Suspense fallback={<p>Loading....</p>}>
        <Models modelPromise={modelPromise} carts={carts} setCarts={setCarts} />
      </Suspense>}
 
